@@ -7,17 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace page_1
 {
-    public partial class page_1 : System.Web.UI.Page
+    public partial class Query_String : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblVisitors.Text = "Number Visitros : " + Application["Visitors"].ToString();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btn1_Click(object sender, EventArgs e)
         {
-            txt2.Text = txt1.Text;
-            txt1.Text = "";
+            Response.Redirect("MoveText.aspx?name=" + txt3.Text);
         }
     }
 }

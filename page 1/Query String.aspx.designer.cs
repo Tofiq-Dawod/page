@@ -10,7 +10,7 @@
 namespace page_1 {
     
     
-    public partial class page_2 {
+    public partial class Query_String {
         
         /// <summary>
         /// form1 control.
@@ -22,21 +22,30 @@ namespace page_1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// chk1 control.
+        /// txt3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chk1;
+        protected global::System.Web.UI.WebControls.TextBox txt3;
         
         /// <summary>
-        /// btn control.
+        /// lblVisitors control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn;
+        protected global::System.Web.UI.WebControls.Label lblVisitors;
+        
+        /// <summary>
+        /// btn1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn1;
     }
 }
