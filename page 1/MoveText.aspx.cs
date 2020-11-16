@@ -20,6 +20,7 @@ namespace page_1
             lblVisitors.Text = "Number Visitros : " + Application["Visitors"].ToString();
             if (!IsPostBack)
             {
+                HiddenField1.Value = "Hello : " + Application["FirstName"] + " " + Application["LastName"];
                 if (Session["Location"] != null && Session["Number"] != null)
                 {
                     lblName1.Text = "Location : " + Session["Location"].ToString();

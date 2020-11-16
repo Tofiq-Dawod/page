@@ -10,9 +10,13 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:HiddenField ID="HiddenField1" runat="server" />
+    
         <asp:Label ID="lblFirstName" runat="server"></asp:Label>
 &nbsp;&nbsp;&nbsp;
         <asp:Label ID="lblLastName" runat="server"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="lblVisitors" runat="server"></asp:Label>
         <br />
         <br />
     
@@ -26,7 +30,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="lblEmail" runat="server"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="lblVisitors" runat="server"></asp:Label>
         <br />
         <br />
     
@@ -38,7 +41,13 @@
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Move" />
     
-    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <script type="text/javascript">
+            function GetHidden() {
+                alert(document.getElementById("HiddenField1").value);
+            }
+        </script>
+        <input id="Button2" type="button" value="GetHidden" OnClick="GetHidden()" /></div>
     </form>
 </body>
 </html>
